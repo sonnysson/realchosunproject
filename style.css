@@ -1,8 +1,28 @@
 
 .month {
     font-size: 30px;
-    padding:0 25px;
     color:#4e4e4e;
     font-weight: 600;
-    text-align: center;
+}
+
+.row {
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+        border: 1px solid gray;
+}
+
+
+
+.table-type {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li {
+    background-color:aquamarine
+}
+
+.day {
+    text-align: start;
 }
