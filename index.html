@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>project</title>
@@ -14,13 +15,23 @@
             top: 20px;
             right: 70px;
         }
+
+        th {
+            font-size: 15px;
+            border-collapse: collapse;
+            line-height: 1.5;
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <a class="navbar-brand" href="#"><img src="/symbol.jpg" alt="" style="width: 60px"></a>
+        <a class="navbar-brand" href="#"><img src="symbol.jpg" alt="" style="width: 60px"></a>
         <a class="nav-link active right-box" href="#">Log-in</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,8 +45,319 @@
                 <a class="nav-link" href="#">버스 시간표</a>
             </div>
         </div>
-
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+    <div class="tbl-cal">
+        <div class="month">
+            <div class="row">
+                <div> <img src="left.png" alt="" style="margin:0px 15px 5px 0px;">
+                </div>
+                <div class="now">2022.09</div>
+                <div> <img src="right.png" alt="" style="width: 30px;     margin:0px 0px 5px 15px;"></div>
+            </div>
+        </div>
+        <table class="table-type">
+            <caption></caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">SUN</th>
+                    <th scope="col">MON</th>
+                    <th scope="col">TUE</th>
+                    <th scope="col">WED</th>
+                    <th scope="col">THU</th>
+                    <th scope="col">FRI</th>
+                    <th scope="col">SAT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row"> </td>
+                    <td scope="row"> </td>
+                    <td scope="row"> </td>
+                    <td scope="row"> </td>
+                    <td>
+                        <p class="day"> 1
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2353', 'chosun', '1');" class="onDate"> 2학기 개강(2학기 개시)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 2
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat"> 3
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun"> 4
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 5
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 6
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 7
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2354', 'chosun', '1');" class="onDate"> 수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 8
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 9
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat"> 10
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2355', 'chosun', '1');" class="onDate"> 추석(휴업일)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun"> 11
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 12
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 13
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 14
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td scope="row" class="today">
+                        <p class="day"> 15
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 16
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat"> 17
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun"> 18
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 19
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 20
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 21
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 22
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 23
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat"> 24
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun"> 25
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 26
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 27
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 28
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list"> </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 29
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2356', 'chosun', '1');" class="onDate"> 개교기념일(휴업일) </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <p class="day"> 30
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a href="#" onclick="javascript:set_layer('2357', 'chosun', '1');" class="onDate"> 수업일수 1/4선 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td scope="row"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body></html>
