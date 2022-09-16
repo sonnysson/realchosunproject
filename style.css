@@ -1,28 +1,67 @@
-
 .month {
-    font-size: 30px;
-    color:#4e4e4e;
-    font-weight: 600;
+  font-size: 30px;
+  color: #4e4e4e;
+  font-weight: 600;
+  border: 2px solid #f9f9f9;
+}
+
+.sat {
+  color: blue;
+}
+.sun {
+  color: red;
 }
 
 .row {
-    padding: 35px;
-    align-items: center;
-    justify-content: center;
-        border: 1px solid gray;
+  padding: 35px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e3e3e3;
 }
-
-
 
 .table-type {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-li {
-    background-color:aquamarine
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .day {
-    text-align: start;
+  position: relative;
+  display: flex;
+  top: -13px;
+  left: 5px;
+  margin-top: -35px;
+  margin-right: 1px;
+  font-weight: 700;
+}
+th {
+  padding-left: 7px;
+  width: 190px;
+  min-width: 100px;
+  background-color: #f9f9f9;
+}
+.onDate {
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+td {
+  font-size: 14px;
+  height: 120px;
+  border: 1px solid #e3e3e3;
+  padding: 5px;
+}
+.sub {
+  height: 20px;
+}
+table {
+  border: 1px solid #e3e3e3;
+}
+.day-list {
+  margin: -34px 0px 0px 8px;
+}
+p {
+  margin: 0%;
+}
+li::marker {
+  color: #6bcba6;
 }

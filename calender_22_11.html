@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <style>
+        /* Modify the background color */
+        .navbar-custom {
+            background-color: #99ccff;
+        }
+
+        .right-box {
+            position: absolute;
+            top: 20px;
+            right: 70px;
+        }
+
+        th {
+            font-size: 15px;
+            border-collapse: collapse;
+            line-height: 1.5;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="#"><img src="symbol.jpg" alt="" style="width: 60px"></a>
+        <a class="nav-link active right-box" href="#">Log-in</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">시간표</a>
+                <a class="nav-link" href="#">학식 메뉴</a>
+                <a class="nav-link" href="#">학점 계산기</a>
+                <a class="nav-link" href="#">버스 시간표</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="tbl-cal">
+        <div class="month">
+            <div class="row">
+                <div> <a href="calender_22_10.html"><img src="left.png" alt="" style="margin:0px 15px 5px 0px;"></a>
+                </div>
+                <div class="now">2022.11</div>
+                <div> <a href="calender_22_12.html"><img src="right.png" alt=""
+                            style="width: 30px;     margin:0px 0px 5px 15px;"></a></div>
+            </div>
+        </div>
+        <table class="table-type">
+            <caption></caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">SUN</th>
+                    <th scope="col">MON</th>
+                    <th scope="col">TUE</th>
+                    <th scope="col">WED</th>
+                    <th scope="col">THU</th>
+                    <th scope="col">FRI</th>
+                    <th scope="col">SAT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <td scope="row">
+                        <p class="day">
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <a class="onDate">
+                                        수강신청 정정 및 취소
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </td> -->
+                    <td scope="row">
+                        <p class="day sun">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">1
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">2
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">3
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">4
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">5
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">6
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun">7
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">8
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">9
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">10
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">11
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">12
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">13
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun">14
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">15
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">16
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">17
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">18
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">19
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">20
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun">21
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">22
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">23
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">24
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">25
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업일수 3/4선</p>
+                                </li>
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                        </div>
+                    </td>
+                    </td>
+                    <td scope="row">
+                        <p class="day">26
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">27
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun">28
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day">29
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day">30
+                        </p>
+                        <div class="sub">
+                            <ul class="day-list">
+                                <li>
+                                    <p>수업 평가</p>
+                                </li>
+                        </div>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <p class="day sun">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day">
+                        </p>
+                    </td>
+                    <td scope="row">
+                        <p class="day sat">
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
